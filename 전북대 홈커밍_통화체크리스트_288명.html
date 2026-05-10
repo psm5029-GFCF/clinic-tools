@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>나사렛전북대 통화 체크리스트</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap');
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Noto Sans KR',sans-serif;background:#eef0f7;color:#1a1d2e;min-height:100vh;padding:22px 16px 60px;display:flex;justify-content:center;}
+.wrap{width:100%;max-width:920px;}
+.hd{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:14px;}
+.ttl{font-size:1.4rem;font-weight:700;color:#1e2340;}
+.chips{display:flex;gap:7px;flex-wrap:wrap;}
+.chip{display:flex;align-items:center;gap:5px;background:#fff;border:1.5px solid #dde1ef;border-radius:20px;padding:4px 12px;font-size:.82rem;font-weight:600;color:#3a3f5c;box-shadow:0 1px 3px rgba(0,0,0,.06);}
+.dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
+.pb-wrap{background:#dde1ef;border-radius:20px;height:7px;margin-bottom:14px;overflow:hidden;display:flex;}
+.pb{height:100%;transition:width .4s ease;}
+.pb-g{background:#22c47a;}.pb-r{background:#f05252;}.pb-v{background:#7c5cbf;}.pb-y{background:#f5a623;}.pb-o{background:#e07b3a;}
+.tb{display:flex;gap:7px;margin-bottom:12px;flex-wrap:wrap;align-items:center;}
+.fb{background:#fff;border:1.5px solid #dde1ef;border-radius:8px;color:#6b7494;padding:5px 13px;font-size:.8rem;font-weight:600;cursor:pointer;font-family:inherit;transition:all .15s;white-space:nowrap;}
+.fb:hover{border-color:#4f73d9;color:#4f73d9;}
+.fb.on{background:#4f73d9;border-color:#4f73d9;color:#fff;}
+.hs{background:#fff;border:1.5px solid #dde1ef;border-radius:8px;color:#3a3f5c;padding:5px 10px;font-size:.8rem;font-family:inherit;outline:none;cursor:pointer;}
+.sr{flex:1;min-width:120px;background:#fff;border:1.5px solid #dde1ef;border-radius:8px;color:#1a1d2e;padding:5px 12px;font-size:.82rem;font-family:inherit;outline:none;transition:border-color .15s;}
+.sr:focus{border-color:#4f73d9;}
+.card{background:#fff;border-radius:14px;box-shadow:0 2px 16px rgba(30,40,90,.08);overflow:hidden;}
+table{width:100%;border-collapse:collapse;font-size:.88rem;}
+thead th{background:#f7f8fc;color:#7a82a8;font-weight:600;padding:10px 8px;text-align:center;border-bottom:2px solid #e8eaf4;font-size:.74rem;letter-spacing:.3px;position:sticky;top:0;z-index:10;white-space:nowrap;}
+th.tn{text-align:left;padding-left:14px;}
+tbody tr{border-bottom:1px solid #f0f2f9;transition:background .1s;}
+tbody tr:last-child{border-bottom:none;}
+tbody tr:hover{background:#f7f9ff;}
+tbody tr.hidden{display:none;}
+td{padding:8px 7px;vertical-align:middle;text-align:center;}
+td.n{color:#b0b8d1;font-size:.75rem;width:32px;}
+td.h{color:#8892b0;font-size:.78rem;font-weight:600;width:46px;}
+td.nm{text-align:left;padding-left:14px;font-weight:700;font-size:.92rem;color:#1a1d2e;}
+td.ph{color:#5a6280;font-size:.8rem;font-weight:500;white-space:nowrap;}
+.sg{display:flex;gap:4px;justify-content:center;flex-wrap:wrap;}
+.sb{border:1.5px solid transparent;border-radius:7px;padding:4px 8px;font-size:.72rem;font-weight:700;cursor:pointer;font-family:inherit;opacity:.28;transition:opacity .15s,transform .1s,box-shadow .15s;white-space:nowrap;}
+.sb:hover{opacity:.65;}
+.sb.on{opacity:1;transform:scale(1.05);box-shadow:0 2px 8px rgba(0,0,0,.12);}
+.sb-p{background:#f0f2f7;border-color:#c8cee0;color:#6b7494;}
+.sb-t{background:#fff8ec;border-color:#f5a623;color:#c47d00;}
+.sb-no{background:#fff2e8;border-color:#e07b3a;color:#b05a10;}
+.sb-at{background:#eafaf3;border-color:#22c47a;color:#1a9e62;}
+.sb-ab{background:#fff0f0;border-color:#f05252;color:#c03030;}
+.sb-ud{background:#f3f0ff;border-color:#7c5cbf;color:#5c3a9e;}
+td.memo{width:120px;}
+.mi{width:100%;border:1.5px solid #e0e4ef;border-radius:7px;padding:4px 7px;font-size:.76rem;font-family:inherit;color:#1a1d2e;background:#f8f9fc;outline:none;transition:border-color .15s,background .15s;}
+.mi:focus{border-color:#4f73d9;background:#fff;}
+.mi::placeholder{color:#c0c6d8;}
+tr.st-at{background:#f2fbf6!important;}tr.st-ab{background:#fff5f5!important;}
+tr.st-ud{background:#f8f5ff!important;}tr.st-t{background:#fffbf2!important;}tr.st-no{background:#fff6ee!important;}
+tr.st-at:hover{background:#e8f8f0!important;}tr.st-ab:hover{background:#fce8e8!important;}
+tr.st-ud:hover{background:#f0eaff!important;}tr.st-t:hover{background:#fff4e0!important;}tr.st-no:hover{background:#ffe8d0!important;}
+.sec td{background:#eef1fa;color:#4f73d9;font-weight:700;font-size:.8rem;padding:6px 14px;text-align:left;border-top:2px solid #d5daf0;}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="hd">
+  <span class="ttl">📞 나사렛전북대 통화 체크리스트</span>
+  <div class="chips" id="chips"></div>
+</div>
+<div class="pb-wrap">
+  <div class="pb pb-g" id="pb-at" style="width:0%"></div>
+  <div class="pb pb-r" id="pb-ab" style="width:0%"></div>
+  <div class="pb pb-v" id="pb-ud" style="width:0%"></div>
+  <div class="pb pb-y" id="pb-t" style="width:0%"></div>
+  <div class="pb pb-o" id="pb-no" style="width:0%"></div>
+</div>
+<div class="tb">
+  <button class="fb on" onclick="flt('all',this)">전체</button>
+  <button class="fb" onclick="flt('p',this)">통화전</button>
+  <button class="fb" onclick="flt('t',this)">시도중</button>
+  <button class="fb" onclick="flt('no',this)">안받음</button>
+  <button class="fb" onclick="flt('at',this)">참석</button>
+  <button class="fb" onclick="flt('ab',this)">불참</button>
+  <button class="fb" onclick="flt('ud',this)">미정</button>
+  <select class="hs" id="hs" onchange="render()">
+    <option value="">전체 학번</option>
+    <option value="83">83학번</option><option value="84">84학번</option>
+    <option value="85">85학번</option><option value="86">86학번</option>
+    <option value="87">87학번</option><option value="88">88학번</option>
+    <option value="89">89학번</option><option value="90">90학번</option>
+    <option value="91">91학번</option><option value="92">92학번</option>
+    <option value="93">93학번</option><option value="94">94학번</option>
+    <option value="95">95학번</option><option value="96">96학번</option>
+    <option value="97">97학번</option><option value="98">98학번</option>
+    <option value="학번없음">학번없음</option>
+  </select>
+  <input class="sr" type="text" placeholder="🔍 이름 검색..." oninput="q=this.value.trim();render()">
+</div>
+<div class="card">
+<table>
+<thead>
+<tr>
+  <th rowspan="2">#</th><th rowspan="2">학번</th>
+  <th rowspan="2" class="tn">이름</th><th rowspan="2">전화번호</th>
+  <th>통화전</th><th>시도중</th><th>통화완료</th>
+  <th rowspan="2" style="min-width:110px">기타 메모</th>
+</tr>
+<tr style="font-size:.67rem;color:#a0a8c0;font-weight:500;">
+  <th></th><th>시도중 · 안받음</th>
+  <th style="color:#4f73d9;font-weight:600;">참석 · 불참 · 미정</th>
+</tr>
+</thead>
+<tbody id="tb"></tbody>
+</table>
+</div>
+</div>
+<script>
+const D=[{"name":"문규화.하경호","phone":"010-2764-0195","hak":"83"},{"name":"박상진,심숙영","phone":"010-3671-7155","hak":"83"},{"name":"박승주","phone":"010-4608-1724","hak":"83"},{"name":"양종술","phone":"010-3679-2753","hak":"83"},{"name":"윤두호,오정미","phone":"010-6620-6126","hak":"83"},{"name":"이종철,김경순","phone":"010-4849-6305","hak":"83"},{"name":"최명숙","phone":"010-3661-3705","hak":"83"},{"name":"최철.고영미","phone":"--","hak":"83"},{"name":"황의영.진양석","phone":"010-9264-7234","hak":"83"},{"name":"김택성.양은실","phone":"010-3456-0603","hak":"84"},{"name":"남인수,조옥순","phone":"010-8645-9125","hak":"84"},{"name":"신형곤.최정원","phone":"010-4654-8963","hak":"84"},{"name":"신호철","phone":"010-3682-5486","hak":"84"},{"name":"요한순","phone":"--","hak":"84"},{"name":"유진선.정은옥","phone":"010-4645-5687","hak":"84"},{"name":"조성민","phone":"010-3927-5791","hak":"84"},{"name":"조성현","phone":"010-5074-3220","hak":"84"},{"name":"최기훈.이영란","phone":"010-3676-2832","hak":"84"},{"name":"김대열","phone":"010-8447-5691","hak":"85"},{"name":"최건철","phone":"010-9774-3370","hak":"85"},{"name":"최성일","phone":"010-4200-5779","hak":"85"},{"name":"김위성.홍성숙","phone":"010-8981-9026","hak":"86"},{"name":"노인환","phone":"010-4832-1096","hak":"86"},{"name":"송정훈,이정림","phone":"010-6788-3238","hak":"86"},{"name":"이경희","phone":"010-4273-0273","hak":"86"},{"name":"이명자","phone":"010-8175-9867","hak":"86"},{"name":"정부용","phone":"010-3065-7280","hak":"86"},{"name":"조혜숙","phone":"010-8243-1248","hak":"86"},{"name":"최복실","phone":"010-2274-4278","hak":"86"},{"name":"하태식,이소라","phone":"010-2619-1917","hak":"86"},{"name":"강현원","phone":"010-4209-5139","hak":"87"},{"name":"고광수 목사","phone":"010-3374-2113","hak":"87"},{"name":"김기현,손덕순","phone":"010-3659-7121","hak":"87"},{"name":"김찬옥","phone":"010-2471-4994","hak":"87"},{"name":"나원종","phone":"010-9467-1693","hak":"87"},{"name":"서병학","phone":"010-9855-5568","hak":"87"},{"name":"윤여은","phone":"010-2376-7156","hak":"87"},{"name":"조용기.심정애","phone":"010-9911-4858","hak":"87"},{"name":"채병석","phone":"010-2650-2679","hak":"87"},{"name":"최명진","phone":"010-7377-4653","hak":"87"},{"name":"고성준","phone":"010-8754-3674","hak":"88"},{"name":"김문곤.박정란","phone":"010-9986-8653","hak":"88"},{"name":"김태수,엄금란","phone":"010-6654-5471","hak":"88"},{"name":"박연옥","phone":"010-5619-1796","hak":"88"},{"name":"박철우","phone":"010-3573-8917","hak":"88"},{"name":"송수희","phone":"010-9778-6058","hak":"88"},{"name":"양성관","phone":"010-3655-5014","hak":"88"},{"name":"이선규,남현지","phone":"010-5060-0802","hak":"88"},{"name":"이충열","phone":"010-2330-1329","hak":"88"},{"name":"임전식,임점희","phone":"010-3074-9405","hak":"88"},{"name":"채수진","phone":"010-3708-2906","hak":"88"},{"name":"최정애","phone":"010-2614-5989","hak":"88"},{"name":"황병남","phone":"010-9853-8007","hak":"88"},{"name":"권주일","phone":"--","hak":"89"},{"name":"맹일수","phone":"010-4318-9333","hak":"89"},{"name":"박연훈.황연경","phone":"--","hak":"89"},{"name":"이락은","phone":"010-7546-1203","hak":"89"},{"name":"정재훈","phone":"010-8785-6428","hak":"89"},{"name":"조두기","phone":"010-2868-7498","hak":"89"},{"name":"조정환","phone":"010-3444-6911","hak":"89"},{"name":"주순호.강진명","phone":"010-7617-4917","hak":"89"},{"name":"김입삼","phone":"010-7157-6106","hak":"90"},{"name":"김정호","phone":"010-7420-3655","hak":"90"},{"name":"문미래","phone":"010-4020-1856","hak":"90"},{"name":"박석환,김윤희","phone":"010-7386-4121","hak":"90"},{"name":"유창희,조진영","phone":"010-4743-6424","hak":"90"},{"name":"조병철","phone":"010-7935-2603","hak":"90"},{"name":"하영희","phone":"010-2618-0744","hak":"90"},{"name":"강봉호,임지현","phone":"010-6639-3082","hak":"91"},{"name":"강지광","phone":"010-3015-1058","hak":"91"},{"name":"김명수,김숙영","phone":"010-4626-3103","hak":"91"},{"name":"김승길,최윤선","phone":"010-3132-4601","hak":"91"},{"name":"문정이","phone":"010-5367-0338","hak":"91"},{"name":"백두진","phone":"010-8641-7375","hak":"91"},{"name":"송지현","phone":"010-8620-6941","hak":"91"},{"name":"원미옥","phone":"010-5541-3046","hak":"91"},{"name":"이상훈","phone":"010-3344-2488","hak":"91"},{"name":"이성준","phone":"010-7369-0692","hak":"91"},{"name":"이은영","phone":"010-6283-5101","hak":"91"},{"name":"임정용","phone":"010-2245-9902","hak":"91"},{"name":"정소형,이지원","phone":"010-3000-0034","hak":"91"},{"name":"조범철","phone":"--","hak":"91"},{"name":"채정은","phone":"010-8700-7413","hak":"91"},{"name":"국윤채","phone":"010-4764-3012","hak":"92"},{"name":"김영길,진혜현","phone":"010-5395-9655","hak":"92"},{"name":"김혜란","phone":"--","hak":"92"},{"name":"박연훈","phone":"010-7184-7419","hak":"92"},{"name":"박인혜","phone":"010-4607-1789","hak":"92"},{"name":"이경희","phone":"010-3670-5597","hak":"92"},{"name":"이삼택","phone":"010-3762-1644","hak":"92"},{"name":"임지현,강봉호","phone":"010-6652-0082","hak":"92"},{"name":"황정호","phone":"010-3653-7370","hak":"92"},{"name":"김용진,장미은","phone":"010-7301-5169","hak":"93"},{"name":"김원화","phone":"010-8642-0510","hak":"93"},{"name":"김은희","phone":"--","hak":"93"},{"name":"남정근","phone":"010-7639-5550","hak":"93"},{"name":"류경임","phone":"010-8442-4133","hak":"93"},{"name":"박미준,양정순","phone":"010-2907-4169","hak":"93"},{"name":"박상현,김자희","phone":"010-2657-5669","hak":"93"},{"name":"배복환,백현민간사","phone":"010-2502-7083","hak":"93"},{"name":"배혜경,김옥준","phone":"010-5107-4391","hak":"93"},{"name":"오선하,김동석","phone":"010-9019-5235","hak":"93"},{"name":"오진아,김동천","phone":"010-5175-0103","hak":"93"},{"name":"유동욱","phone":"010-3943-1843","hak":"93"},{"name":"김용석","phone":"010-9530-8502","hak":"94"},{"name":"김정란","phone":"010-8640-4432","hak":"94"},{"name":"류연수","phone":"010-6607-8316","hak":"94"},{"name":"박성숙","phone":"--","hak":"94"},{"name":"박종민,김영미","phone":"010-9643-9458","hak":"94"},{"name":"설성일","phone":"010-6605-8355","hak":"94"},{"name":"신홍식","phone":"010-3234-1934","hak":"94"},{"name":"안상경","phone":"010-4100-9232","hak":"94"},{"name":"윤승로 목사","phone":"010-9271-7553","hak":"94"},{"name":"이명신","phone":"010-4291-2010","hak":"94"},{"name":"정광용,고수진","phone":"010-2967-8570","hak":"94"},{"name":"조영삼","phone":"010-8641-0303","hak":"94"},{"name":"천예리","phone":"--","hak":"94"},{"name":"한상식","phone":"010-6611-1314","hak":"94"},{"name":"김동진","phone":"010-2632-5697","hak":"95"},{"name":"김명주","phone":"010-5035-9269","hak":"95"},{"name":"박주연","phone":"010-4909-2167","hak":"95"},{"name":"박창민","phone":"--","hak":"95"},{"name":"서기영","phone":"--","hak":"95"},{"name":"송준기","phone":"010-4039-6504","hak":"95"},{"name":"김태성,이명주","phone":"010-8817-3792","hak":"96"},{"name":"남상철","phone":"010-5443-5745","hak":"96"},{"name":"민경남,오기순간사","phone":"010-7163-8212","hak":"96"},{"name":"승현","phone":"010-6610-9269","hak":"96"},{"name":"윤세정","phone":"--","hak":"96"},{"name":"최지혜","phone":"010-9223-4857","hak":"96"},{"name":"김상재,최지선","phone":"010-5195-1248","hak":"97"},{"name":"이상곤","phone":"010-4628-4050","hak":"97"},{"name":"이현수","phone":"010-5756-7305","hak":"97"},{"name":"장이진","phone":"010-9448-5826","hak":"97"},{"name":"전상준","phone":"010-2379-1248","hak":"97"},{"name":"정채윤","phone":"010-2604-7453","hak":"97"},{"name":"차동철,권은복","phone":"010-6604-0430","hak":"97"},{"name":"고성수,박자영","phone":"010-2480-8343","hak":"98"},{"name":"구지혜","phone":"010-3477-4969","hak":"98"},{"name":"김승기,윤미현간사","phone":"010-9318-9498","hak":"98"},{"name":"김은정","phone":"010-3689-0288","hak":"98"},{"name":"서정규","phone":"010-3051-3476","hak":"98"},{"name":"송기성","phone":"010-3158-9903","hak":"98"},{"name":"오길섭","phone":"010-4611-1452","hak":"98"},{"name":"이은경","phone":"--","hak":"98"},{"name":"이평화","phone":"010-2648-3780","hak":"98"},{"name":"임남희","phone":"010-7403-3336","hak":"98"},{"name":"정민.백수미","phone":"010-6615-7450","hak":"98"},{"name":"정우연","phone":"010-2238-8098","hak":"98"},{"name":"조양동,김웅지","phone":"010-8640-5762","hak":"98"},{"name":"천은숙","phone":"010-4617-3786","hak":"98"},{"name":"한주헌","phone":"010-8277-7115","hak":"98"},{"name":"홍세화","phone":"010-2647-5856","hak":"98"},{"name":"황안나","phone":"010-9956-5285","hak":"98"},{"name":"강언호","phone":"010-3977-6359","hak":"학번없음"},{"name":"강영민","phone":"010-2264-8825","hak":"학번없음"},{"name":"강용한","phone":"010-8665-2875","hak":"학번없음"},{"name":"강용환","phone":"--","hak":"학번없음"},{"name":"김명선","phone":"--","hak":"학번없음"},{"name":"김문수","phone":"010-4139-1937","hak":"학번없음"},{"name":"김미란","phone":"010-8641-6898","hak":"학번없음"},{"name":"김미언","phone":"010-5055-3764","hak":"학번없음"},{"name":"김병권 목사","phone":"010-5525-0197","hak":"학번없음"},{"name":"김선민","phone":"010-2997-8299","hak":"학번없음"},{"name":"김선아","phone":"010-6225-9522","hak":"학번없음"},{"name":"김세곤","phone":"--","hak":"학번없음"},{"name":"김수미","phone":"010-3684-4692","hak":"학번없음"},{"name":"김연석","phone":"--","hak":"학번없음"},{"name":"김영진","phone":"011-682-5352","hak":"학번없음"},{"name":"김영호","phone":"--","hak":"학번없음"},{"name":"김용진","phone":"--","hak":"학번없음"},{"name":"김우 장로","phone":"010-4900-5193","hak":"학번없음"},{"name":"김은선","phone":"010-3642-8683","hak":"학번없음"},{"name":"김은정","phone":"--","hak":"학번없음"},{"name":"김은정","phone":"--","hak":"학번없음"},{"name":"김은진","phone":"010-2779-3857","hak":"학번없음"},{"name":"김정현","phone":"--","hak":"학번없음"},{"name":"김주안","phone":"--","hak":"학번없음"},{"name":"김태영,김정순","phone":"010-6626-5762","hak":"학번없음"},{"name":"김현주.양용순","phone":"010-9331-0920","hak":"학번없음"},{"name":"김형일","phone":"--","hak":"학번없음"},{"name":"나춘남","phone":"--","hak":"학번없음"},{"name":"남궁길용","phone":"010-3246-2372","hak":"학번없음"},{"name":"남궁선.이정숙","phone":"010-5006-8248","hak":"학번없음"},{"name":"남상철","phone":"010-5443-5745","hak":"학번없음"},{"name":"두형철","phone":"010-3847-4416","hak":"학번없음"},{"name":"류경인","phone":"010-8442-4133","hak":"학번없음"},{"name":"마기정","phone":"--","hak":"학번없음"},{"name":"박동석.정선아","phone":"010-4641-1018","hak":"학번없음"},{"name":"박봉기.권지은","phone":"010-9924-0536","hak":"학번없음"},{"name":"박서현","phone":"010--","hak":"학번없음"},{"name":"박성언","phone":"010-6652-1042","hak":"학번없음"},{"name":"박순섭간사","phone":"010-4745-7084","hak":"학번없음"},{"name":"박신애","phone":"010-4656-2537","hak":"학번없음"},{"name":"박애순","phone":"--","hak":"학번없음"},{"name":"박운규.이정화","phone":"--","hak":"학번없음"},{"name":"박은영","phone":"--","hak":"학번없음"},{"name":"박인수","phone":"010-2620-5945","hak":"학번없음"},{"name":"박정아","phone":"--","hak":"학번없음"},{"name":"박종국.한성숙","phone":"010-5193-3680","hak":"학번없음"},{"name":"박준영","phone":"--","hak":"학번없음"},{"name":"박창화","phone":"010-9061-9106","hak":"학번없음"},{"name":"박혜정","phone":"010-3275-2880","hak":"학번없음"},{"name":"박희열.임미성","phone":"010-8629-9531","hak":"학번없음"},{"name":"백태흠.오선자","phone":"-681-9306","hak":"학번없음"},{"name":"서민이","phone":"010-4658-7247","hak":"학번없음"},{"name":"서지원","phone":"010-4161-5270","hak":"학번없음"},{"name":"서지훈","phone":"010-6678-1283","hak":"학번없음"},{"name":"소선녀","phone":"--","hak":"학번없음"},{"name":"소재현","phone":"--","hak":"학번없음"},{"name":"손복심","phone":"010-5683-3402","hak":"학번없음"},{"name":"손주현","phone":"--","hak":"학번없음"},{"name":"송미경","phone":"010-6794-8072","hak":"학번없음"},{"name":"송민정","phone":"--","hak":"학번없음"},{"name":"신명자","phone":"010-8647-8245","hak":"학번없음"},{"name":"신명호.김문숙","phone":"--","hak":"학번없음"},{"name":"신일교회","phone":"--","hak":"학번없음"},{"name":"신창옥,김영미","phone":"010-7552-0791","hak":"학번없음"},{"name":"안성렬.최윤희","phone":"010-8277-7238","hak":"학번없음"},{"name":"안성원","phone":"--","hak":"학번없음"},{"name":"양철희","phone":"--","hak":"학번없음"},{"name":"양혜준","phone":"010-4796-3891","hak":"학번없음"},{"name":"오병목","phone":"010-9019-0406","hak":"학번없음"},{"name":"오승준","phone":"010-3710-3677","hak":"학번없음"},{"name":"오화연","phone":"-6309-1157","hak":"학번없음"},{"name":"온정애","phone":"010-3065-5127","hak":"학번없음"},{"name":"유갑식.이수미","phone":"-232-6302","hak":"학번없음"},{"name":"유길순","phone":"--","hak":"학번없음"},{"name":"유원영","phone":"--","hak":"학번없음"},{"name":"유진경","phone":"--","hak":"학번없음"},{"name":"유판식","phone":"010-7535-1332","hak":"학번없음"},{"name":"유판오,황현숙","phone":"010-2898-0365","hak":"학번없음"},{"name":"유홍엽 권사","phone":"010-8874-5677","hak":"학번없음"},{"name":"이기호","phone":"010-4750-9750","hak":"학번없음"},{"name":"이명화.박재두","phone":"010-2413-9505","hak":"학번없음"},{"name":"이봉준","phone":"010-2991-7281","hak":"학번없음"},{"name":"이상일 목사","phone":"010-2636-5340","hak":"학번없음"},{"name":"이상정","phone":"--","hak":"학번없음"},{"name":"이석","phone":"--","hak":"학번없음"},{"name":"이성희","phone":"010-2426-6433","hak":"학번없음"},{"name":"이승준","phone":"--","hak":"학번없음"},{"name":"이영주","phone":"--","hak":"학번없음"},{"name":"이인구.석은실","phone":"010-3655-6825","hak":"학번없음"},{"name":"이재호","phone":"010-6616-0102","hak":"학번없음"},{"name":"이재홍","phone":"--","hak":"학번없음"},{"name":"이정임","phone":"--","hak":"학번없음"},{"name":"이정호","phone":"010-2614-9282","hak":"학번없음"},{"name":"이종일.양선임","phone":"016-656-2156","hak":"학번없음"},{"name":"이진숙","phone":"010-4656-3251","hak":"학번없음"},{"name":"이철민","phone":"010-2618-0744","hak":"학번없음"},{"name":"이현식.김옥향","phone":"010-6603-9475","hak":"학번없음"},{"name":"이혜신","phone":"010-3652-0594","hak":"학번없음"},{"name":"이혜진","phone":"--","hak":"학번없음"},{"name":"이홍규.김경자","phone":"--","hak":"학번없음"},{"name":"임경순","phone":"--","hak":"학번없음"},{"name":"임경일","phone":"--","hak":"학번없음"},{"name":"임영미","phone":"010-3006-8469","hak":"학번없음"},{"name":"임진기","phone":"--","hak":"학번없음"},{"name":"장세걸.진승희","phone":"010-4650-1508","hak":"학번없음"},{"name":"장은용","phone":"--","hak":"학번없음"},{"name":"장태연","phone":"--","hak":"학번없음"},{"name":"전소선","phone":"010--","hak":"학번없음"},{"name":"전철만","phone":"010-4655-4797","hak":"학번없음"},{"name":"정경수","phone":"--","hak":"학번없음"},{"name":"정광익","phone":"010-7250-0739","hak":"학번없음"},{"name":"정기연.박현정","phone":"010-2733-7588","hak":"학번없음"},{"name":"정성은","phone":"-2625-0159","hak":"학번없음"},{"name":"정지인","phone":"010-2826-6877","hak":"학번없음"},{"name":"정찬주","phone":"010-7304-2689","hak":"학번없음"},{"name":"정창연","phone":"--","hak":"학번없음"},{"name":"조길례","phone":"010-6601-6632","hak":"학번없음"},{"name":"조선희","phone":"010-5507-9008","hak":"학번없음"},{"name":"조유진,허영선","phone":"010-8692-1588","hak":"학번없음"},{"name":"조정수","phone":"--","hak":"학번없음"},{"name":"조현철","phone":"--","hak":"학번없음"},{"name":"채철수","phone":"010-5671-0711","hak":"학번없음"},{"name":"천지현","phone":"--","hak":"학번없음"},{"name":"최만봉","phone":"010-2389-2616","hak":"학번없음"},{"name":"최민규","phone":"010-8244-7991","hak":"학번없음"},{"name":"최용호.윤인일","phone":"--","hak":"학번없음"},{"name":"최인숙","phone":"--","hak":"학번없음"},{"name":"최정원","phone":"010-4631-1028","hak":"학번없음"},{"name":"추형엽","phone":"010-4919-7450","hak":"학번없음"},{"name":"하영희","phone":"010-9080-0744","hak":"학번없음"},{"name":"한기영.최순정","phone":"010-7535-9182","hak":"학번없음"},{"name":"홍성구.이경하","phone":"011-262-6734","hak":"학번없음"},{"name":"황룡","phone":"--","hak":"학번없음"},{"name":"황현도","phone":"010-5086-9512","hak":"학번없음"}];
+let ST={},ME={},cf='all',q='';
+try{ST=JSON.parse(localStorage.getItem('cs5_st')||'{}');ME=JSON.parse(localStorage.getItem('cs5_me')||'{}')}catch(e){}
+function sv(){try{localStorage.setItem('cs5_st',JSON.stringify(ST));localStorage.setItem('cs5_me',JSON.stringify(ME))}catch(e){}}
+function ss(id,s){ST[id]=(ST[id]===s)?'p':s;sv();rr(id);stats();render();}
+function sm(id,v){ME[id]=v;sv();}
+function rr(id){const tr=document.getElementById('r'+id);if(!tr)return;const s=ST[id]||'p';tr.className='st-'+s;tr.querySelectorAll('.sb').forEach(b=>b.classList.toggle('on',b.dataset.s===s));}
+function build(){
+  const tb=document.getElementById('tb');tb.innerHTML='';let lh='';
+  D.forEach((d,i)=>{
+    if(d.hak!==lh){const sr=document.createElement('tr');sr.className='sec';sr.dataset.hs=d.hak;sr.innerHTML='<td colspan="8">📌 '+(d.hak==='학번없음'?'학번 없음':d.hak+'학번')+'</td>';tb.appendChild(sr);lh=d.hak;}
+    const s=ST[i]||'p';const m=(ME[i]||'').replace(/"/g,'&quot;');
+    const tr=document.createElement('tr');tr.id='r'+i;tr.className='st-'+s;tr.dataset.n=d.name;tr.dataset.h=d.hak;
+    tr.innerHTML='<td class="n">'+(i+1)+'</td><td class="h">'+d.hak+'</td><td class="nm">'+d.name+'</td><td class="ph">'+d.phone+'</td>'+
+      '<td><div class="sg"><button class="sb sb-p'+(s==='p'?' on':'')+'" data-s="p" onclick="ss('+i+',\'p\')">통화전</button></div></td>'+
+      '<td><div class="sg"><button class="sb sb-t'+(s==='t'?' on':'')+'" data-s="t" onclick="ss('+i+',\'t\')">시도중</button><button class="sb sb-no'+(s==='no'?' on':'')+'" data-s="no" onclick="ss('+i+',\'no\')">안받음</button></div></td>'+
+      '<td><div class="sg"><button class="sb sb-at'+(s==='at'?' on':'')+'" data-s="at" onclick="ss('+i+',\'at\')">✓ 참석</button><button class="sb sb-ab'+(s==='ab'?' on':'')+'" data-s="ab" onclick="ss('+i+',\'ab\')">✗ 불참</button><button class="sb sb-ud'+(s==='ud'?' on':'')+'" data-s="ud" onclick="ss('+i+',\'ud\')">? 미정</button></div></td>'+
+      '<td class="memo"><input class="mi" type="text" placeholder="메모..." value="'+m+'" oninput="sm('+i+',this.value)"></td>';
+    tb.appendChild(tr);
+  });
+}
+function stats(){
+  const c={p:0,t:0,no:0,at:0,ab:0,ud:0};D.forEach((_,i)=>{c[ST[i]||'p']++;});const tot=D.length;
+  document.getElementById('chips').innerHTML='<div class="chip"><span class="dot" style="background:#b0b8d1"></span>통화전 '+c.p+'</div><div class="chip"><span class="dot" style="background:#f5a623"></span>시도중 '+c.t+'</div><div class="chip"><span class="dot" style="background:#e07b3a"></span>안받음 '+c.no+'</div><div class="chip"><span class="dot" style="background:#22c47a"></span>참석 '+c.at+'</div><div class="chip"><span class="dot" style="background:#f05252"></span>불참 '+c.ab+'</div><div class="chip"><span class="dot" style="background:#7c5cbf"></span>미정 '+c.ud+'</div>';
+  ['at','ab','ud','t','no'].forEach(k=>{document.getElementById('pb-'+k).style.width=(c[k]/tot*100)+'%';});
+}
+function flt(f,btn){cf=f;document.querySelectorAll('.fb').forEach(b=>b.classList.remove('on'));btn.classList.add('on');render();}
+function render(){
+  const hs=document.getElementById('hs').value;
+  document.querySelectorAll('#tb tr').forEach(tr=>{
+    if(tr.classList.contains('sec')){tr.classList.toggle('hidden',hs!==''&&tr.dataset.hs!==hs);return;}
+    const id=parseInt(tr.id.replace('r',''));const s=ST[id]||'p';
+    const ok=(cf==='all'||s===cf)&&(hs===''||tr.dataset.h===hs)&&(!q||tr.dataset.n.includes(q));
+    tr.classList.toggle('hidden',!ok);
+  });
+}
+build();stats();
+</script>
+</body>
+</html>
